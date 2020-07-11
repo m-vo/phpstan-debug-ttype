@@ -1,0 +1,16 @@
+{
+    "require-dev": {
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-phpunit": "^0.12.8",
+        "phpunit/phpunit": "^8.5.4"
+    },
+    "autoload-dev": {
+        "files": [
+            "Test.php"
+        ]
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyze Test.php --level=6",
+        "phpstan-dbg": "php -dxdebug.remote_enable=1 -dxdebug.remote_autostart=1 vendor/bin/phpstan.phar analyze Test.php --xdebug --debug --level=6"
+    }
+}

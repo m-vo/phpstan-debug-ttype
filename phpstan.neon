@@ -1,0 +1,5 @@
+services:
+    -
+        class: PHPStan\Type\PHPUnit\Assert\AssertStaticMethodTypeSpecifyingExtension
+        tags:
+            - phpstan.typeSpecifier.staticMethodTypeSpecifyingExtension
